@@ -47,5 +47,12 @@ layout: default
     {%- include disqus_comments.html -%}
   {%- endif -%}
 
+  <!-- START OF RELEVANT PART -->
+  <div
+    class="just-comments"
+    data-allowguests="true"
+    data-apikey="YOUR_API_KEY">
+  </div>
+  <!-- END OF RELEVANT PART -->
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
