@@ -1,5 +1,5 @@
 <script>
-    const GH_API_URL = 'https://api.github.com/repos/hoangtd15/hoangtd15.github.com/issues/5/comments?client_id=866da61d4d8522058c53&client_secret=d67dbc4d8c270557ef3395869a8d299ff3c1d3dd';
+    const GH_API_URL = 'https://api.github.com/repos/hoangtd15/hoangtd15.github.com/issues/{{ page.comments_id }}/comments';
     
     let request = new XMLHttpRequest();
     request.open( 'GET', GH_API_URL, true );
