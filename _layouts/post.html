@@ -48,3 +48,12 @@ comments: true
 {%- if site.disqus.shortname -%}
 {%- include disqus_comments.html -%}
 {%- endif -%}
+
+<div class="wrap">
+
+  {{ page.content }}
+
+  {% if page.comments_id %}
+    {% include comments.html %}
+  {% endif %}
+</div>
